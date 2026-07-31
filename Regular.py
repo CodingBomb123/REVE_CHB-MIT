@@ -42,7 +42,7 @@ def build_channel_positions(ch_names, pos_bank):
                 f"Electrode {raw!r} (parsed from a CHB-MIT channel name) was not "
                 f"found in REVE's position bank. First 15 known names: {known_names[:15]}. "
                 "This usually means a naming-convention mismatch (e.g. old vs new "
-                "10-20 nomenclature) -- print pos_bank.get_all_positions() and compare."
+                "10-20 nomenclature), print pos_bank.get_all_positions() and compare."
             )
         return lookup[key]
 
